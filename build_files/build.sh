@@ -14,7 +14,9 @@ dnf5 install -y \
   cockpit-ostree \
   cockpit-selinux \
   cockpit-storaged \
-  tailscale
+  tailscale \
+  samba \
+  samba-common-tools
 
 dnf5 remove -y nano
 dnf5 clean all
