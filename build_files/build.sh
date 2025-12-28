@@ -15,8 +15,9 @@ dnf5 install -y \
   cockpit-selinux \
   cockpit-storaged \
   tailscale \
-  samba \
-  samba-common-tools
+  atuin \
+  starship \
+  zoxide \
 
 dnf5 remove -y nano
 dnf5 clean all
