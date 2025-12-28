@@ -4,6 +4,9 @@ set -euo pipefail
 # Example: tailscale repo (from your generated Containerfile)
 cp /ctx/tailscale.repo /etc/yum.repos.d/tailscale.repo
 
+# Install dnf5 COPR plugin first
+dnf5 install -y dnf5-command\(copr\)
+
 # Enable COPR repo for starship
 dnf5 copr enable -y atim/starship
 
