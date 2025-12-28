@@ -24,6 +24,7 @@ dnf5 install -y \
   atuin \
   starship \
   zoxide \
+  zsh \
 
 dnf5 remove -y nano
 dnf5 clean all
