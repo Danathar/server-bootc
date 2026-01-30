@@ -25,6 +25,7 @@ dnf5 install -y \
   starship \
   zoxide \
   zsh \
+  fish \
 
 dnf5 remove -y nano
 dnf5 clean all
