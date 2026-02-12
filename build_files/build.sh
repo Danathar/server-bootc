@@ -12,6 +12,8 @@ dnf5 copr enable -y atim/starship
 
 # Packages: what the dnf module used to do
 dnf5 install -y \
+  nodejs \
+  npm \
   vim \
   btop \
   rpmconf \
@@ -30,6 +32,9 @@ dnf5 install -y \
 dnf5 remove -y nano
 dnf5 clean all
 
+# Install Codex globally at build-time and always track latest
+npm install -g @openai/codex@latest
+npm cache clean --force
+
 # Systemd: what the systemd module used to do
 systemctl disable zincati.service || true
-
