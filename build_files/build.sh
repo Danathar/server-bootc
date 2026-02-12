@@ -33,7 +33,7 @@ dnf5 remove -y nano
 dnf5 clean all
 
 # Install Codex globally at build-time and always track latest
-npm install -g @openai/codex@latest
+npm install -g --prefix /usr @openai/codex@latest
 npm cache clean --force
 
 # Systemd: what the systemd module used to do
