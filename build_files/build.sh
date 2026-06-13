@@ -14,6 +14,7 @@ dnf5 copr enable -y atim/starship
 dnf5 install -y \
   nodejs \
   npm \
+  python3-six \
   vim \
   btop \
   rpmconf \
