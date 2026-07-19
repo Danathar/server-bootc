@@ -39,8 +39,8 @@ dnf5 clean all
 mkdir -p /tmp/npm_home
 export HOME=/tmp/npm_home
 
-# Install Codex globally at build-time and always track latest
-npm install -g --prefix /usr @openai/codex@latest
+# Install Codex and Claude Code globally at build-time and always track latest
+npm install -g --prefix /usr @openai/codex@latest @anthropic-ai/claude-code@latest
 npm cache clean --force
 
 rm -rf /tmp/npm_home
